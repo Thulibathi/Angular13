@@ -1,13 +1,6 @@
 {
   "productList": [
     {
-      "productName": "Apple",
-      "category": "Fruits",
-      "freshness": "Brand New",
-      "price": 7,
-      "id": 1
-    },
-    {
       "productName": "Oranges",
       "category": "Fruits",
       "freshness": "Second Hand",

@@ -60,6 +60,20 @@ export class AppComponent implements OnInit{
     })
   }
 
+  deleteProduct(id:number)
+  {
+    this.api.deleteProduct(id)
+    .subscribe({
+      next:(res)=>{
+        alert("Product deleted successfully")
+        this.getAllProducts();
+      },
+      error:()=>{
+        alert("Error while deleting the record!")
+      }
+    })
+  }
+
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
